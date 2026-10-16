@@ -1,0 +1,25 @@
+{
+  "data_sha256": "face32f32647e0d939f6233f36dd30dd5d619ae9f3f9b8e10bea4ac7e1f60b1a",
+  "split_random_state": 42,
+  "experiment_fingerprint": "af8797b347a5c114f3329cddfe18a88f85b72509c8034e74c5732ab6657a0336",
+  "selected_configuration": "C08",
+  "final_tree_signature": "096f6b3d00a32b15",
+  "test_metrics": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "p_to_e": 0,
+    "e_to_p": 0,
+    "n": 1625
+  },
+  "graphviz_backend": "matplotlib",
+  "environment": {
+    "Python": "3.12.13",
+    "uruchomienie": "lokalnie",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "seaborn": "0.13.2"
+  }
+}

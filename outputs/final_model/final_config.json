@@ -1,0 +1,71 @@
+{
+  "selected_configuration": {
+    "config_id": "C08",
+    "strategy": "missing_category",
+    "max_depth": 4,
+    "min_samples_split": 20,
+    "min_information_gain": 0.01
+  },
+  "selection_rule": [
+    "1. min. liczba błędów krytycznych p → e (walidacja)",
+    "2. maks. macro-F1 (walidacja)",
+    "3. min. liczba liści",
+    "4. min. liczba węzłów",
+    "5. min. rzeczywista głębokość drzewa",
+    "6a. strategia: missing_category > most_frequent > drop_stalk_root",
+    "6b. mniejsze max_depth (None = ∞)",
+    "6c. większe min_samples_split (ostrożniejszy wzrost)",
+    "6d. większe min_information_gain (ostrożniejszy wzrost)",
+    "6e. identyfikator konfiguracji (porządek całkowity)"
+  ],
+  "preprocessing": {
+    "strategy": "missing_category",
+    "constant_features_dropped": [
+      "veil-type"
+    ],
+    "dropped_features": [
+      "veil-type"
+    ],
+    "n_features_out": 21,
+    "missing_in_fit_data": {
+      "stalk-root": 1968
+    },
+    "imputation": {
+      "stalk-root": "__MISSING__"
+    },
+    "n_samples_fit": 6499
+  },
+  "split": {
+    "random_state": 42,
+    "train": 4874,
+    "validation": 1625,
+    "test": 1625
+  },
+  "tree": {
+    "node_count": 29,
+    "leaf_count": 24,
+    "depth": 4,
+    "used_features": [
+      "odor",
+      "spore-print-color",
+      "habitat",
+      "gill-size",
+      "cap-color"
+    ]
+  },
+  "data": {
+    "source": "https://archive.ics.uci.edu/dataset/73/mushroom",
+    "doi": "https://doi.org/10.24432/C5959T",
+    "sha256": "face32f32647e0d939f6233f36dd30dd5d619ae9f3f9b8e10bea4ac7e1f60b1a"
+  },
+  "environment": {
+    "Python": "3.12.13",
+    "uruchomienie": "lokalnie",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "seaborn": "0.13.2"
+  }
+}

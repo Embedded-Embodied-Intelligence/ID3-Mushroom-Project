@@ -1,0 +1,669 @@
+{
+  "format": "id3-tree",
+  "version": 1,
+  "params": {
+    "max_depth": 4,
+    "min_samples_split": 20,
+    "min_information_gain": 0.01,
+    "class_priority": [
+      "p",
+      "e"
+    ]
+  },
+  "classes": [
+    "e",
+    "p"
+  ],
+  "feature_names": [
+    "cap-shape",
+    "cap-surface",
+    "cap-color",
+    "bruises",
+    "odor",
+    "gill-attachment",
+    "gill-spacing",
+    "gill-size",
+    "gill-color",
+    "stalk-shape",
+    "stalk-root",
+    "stalk-surface-above-ring",
+    "stalk-surface-below-ring",
+    "stalk-color-above-ring",
+    "stalk-color-below-ring",
+    "veil-color",
+    "ring-number",
+    "ring-type",
+    "spore-print-color",
+    "population",
+    "habitat"
+  ],
+  "n_samples_fit": 6499,
+  "root": {
+    "node_id": 0,
+    "depth": 0,
+    "n_samples": 6499,
+    "class_counts": {
+      "e": 3366,
+      "p": 3133
+    },
+    "majority_class": "e",
+    "entropy": 0.9990726228616842,
+    "is_leaf": false,
+    "feature": "odor",
+    "information_gain": 0.9053072486483542,
+    "stop_reason": null,
+    "branch_value": null,
+    "candidate_gains": {
+      "cap-shape": 0.04836959536976004,
+      "cap-surface": 0.026479409279775767,
+      "cap-color": 0.03483455128606927,
+      "bruises": 0.19324589946648185,
+      "odor": 0.9053072486483542,
+      "gill-attachment": 0.01411758421383158,
+      "gill-spacing": 0.10135016096561966,
+      "gill-size": 0.22358139873708105,
+      "gill-color": 0.4161780004362049,
+      "stalk-shape": 0.007782002582785941,
+      "stalk-root": 0.1370953245514548,
+      "stalk-surface-above-ring": 0.288708790143544,
+      "stalk-surface-below-ring": 0.2730534182562009,
+      "stalk-color-above-ring": 0.2559633316813207,
+      "stalk-color-below-ring": 0.24470377614473826,
+      "veil-color": 0.022907143347162928,
+      "ring-number": 0.037580435526752165,
+      "ring-type": 0.3193101343638872,
+      "spore-print-color": 0.48585959378624965,
+      "population": 0.20385083825726757,
+      "habitat": 0.15274200070845934
+    },
+    "children": {
+      "a": {
+        "node_id": 1,
+        "depth": 1,
+        "n_samples": 318,
+        "class_counts": {
+          "e": 318,
+          "p": 0
+        },
+        "majority_class": "e",
+        "entropy": 0.0,
+        "is_leaf": true,
+        "feature": null,
+        "information_gain": null,
+        "stop_reason": "pure",
+        "branch_value": "a",
+        "candidate_gains": {},
+        "children": {}
+      },
+      "c": {
+        "node_id": 2,
+        "depth": 1,
+        "n_samples": 154,
+        "class_counts": {
+          "e": 0,
+          "p": 154
+        },
+        "majority_class": "p",
+        "entropy": 0.0,
+        "is_leaf": true,
+        "feature": null,
+        "information_gain": null,
+        "stop_reason": "pure",
+        "branch_value": "c",
+        "candidate_gains": {},
+        "children": {}
+      },
+      "f": {
+        "node_id": 3,
+        "depth": 1,
+        "n_samples": 1754,
+        "class_counts": {
+          "e": 0,
+          "p": 1754
+        },
+        "majority_class": "p",
+        "entropy": 0.0,
+        "is_leaf": true,
+        "feature": null,
+        "information_gain": null,
+        "stop_reason": "pure",
+        "branch_value": "f",
+        "candidate_gains": {},
+        "children": {}
+      },
+      "l": {
+        "node_id": 4,
+        "depth": 1,
+        "n_samples": 319,
+        "class_counts": {
+          "e": 319,
+          "p": 0
+        },
+        "majority_class": "e",
+        "entropy": 0.0,
+        "is_leaf": true,
+        "feature": null,
+        "information_gain": null,
+        "stop_reason": "pure",
+        "branch_value": "l",
+        "candidate_gains": {},
+        "children": {}
+      },
+      "m": {
+        "node_id": 5,
+        "depth": 1,
+        "n_samples": 27,
+        "class_counts": {
+          "e": 0,
+          "p": 27
+        },
+        "majority_class": "p",
+        "entropy": 0.0,
+        "is_leaf": true,
+        "feature": null,
+        "information_gain": null,
+        "stop_reason": "pure",
+        "branch_value": "m",
+        "candidate_gains": {},
+        "children": {}
+      },
+      "n": {
+        "node_id": 6,
+        "depth": 1,
+        "n_samples": 2826,
+        "class_counts": {
+          "e": 2729,
+          "p": 97
+        },
+        "majority_class": "e",
+        "entropy": 0.21563381706030849,
+        "is_leaf": false,
+        "feature": "spore-print-color",
+        "information_gain": 0.149578735482132,
+        "stop_reason": null,
+        "branch_value": "n",
+        "candidate_gains": {
+          "cap-shape": 0.04220551782640675,
+          "cap-surface": 0.015907772966569894,
+          "cap-color": 0.09389916951591376,
+          "bruises": 0.0011305830731453692,
+          "gill-attachment": 0.0027306813232878535,
+          "gill-spacing": 0.0064834848936017875,
+          "gill-size": 0.020297440921850096,
+          "gill-color": 0.08835982387860469,
+          "stalk-shape": 0.0629513037991414,
+          "stalk-root": 0.022167846569251082,
+          "stalk-surface-above-ring": 0.022414740567304386,
+          "stalk-surface-below-ring": 0.04975563177831746,
+          "stalk-color-above-ring": 0.03439143703246081,
+          "stalk-color-below-ring": 0.059675310988476254,
+          "veil-color": 0.011263907034819554,
+          "ring-number": 0.026891813669636472,
+          "ring-type": 0.0007242118745525716,
+          "spore-print-color": 0.149578735482132,
+          "population": 0.04546172117088665,
+          "habitat": 0.06047563653384552
+        },
+        "children": {
+          "b": {
+            "node_id": 7,
+            "depth": 2,
+            "n_samples": 36,
+            "class_counts": {
+              "e": 36,
+              "p": 0
+            },
+            "majority_class": "e",
+            "entropy": 0.0,
+            "is_leaf": true,
+            "feature": null,
+            "information_gain": null,
+            "stop_reason": "pure",
+            "branch_value": "b",
+            "candidate_gains": {},
+            "children": {}
+          },
+          "h": {
+            "node_id": 8,
+            "depth": 2,
+            "n_samples": 38,
+            "class_counts": {
+              "e": 38,
+              "p": 0
+            },
+            "majority_class": "e",
+            "entropy": 0.0,
+            "is_leaf": true,
+            "feature": null,
+            "information_gain": null,
+            "stop_reason": "pure",
+            "branch_value": "h",
+            "candidate_gains": {},
+            "children": {}
+          },
+          "k": {
+            "node_id": 9,
+            "depth": 2,
+            "n_samples": 1037,
+            "class_counts": {
+              "e": 1037,
+              "p": 0
+            },
+            "majority_class": "e",
+            "entropy": 0.0,
+            "is_leaf": true,
+            "feature": null,
+            "information_gain": null,
+            "stop_reason": "pure",
+            "branch_value": "k",
+            "candidate_gains": {},
+            "children": {}
+          },
+          "n": {
+            "node_id": 10,
+            "depth": 2,
+            "n_samples": 1079,
+            "class_counts": {
+              "e": 1079,
+              "p": 0
+            },
+            "majority_class": "e",
+            "entropy": 0.0,
+            "is_leaf": true,
+            "feature": null,
+            "information_gain": null,
+            "stop_reason": "pure",
+            "branch_value": "n",
+            "candidate_gains": {},
+            "children": {}
+          },
+          "o": {
+            "node_id": 11,
+            "depth": 2,
+            "n_samples": 37,
+            "class_counts": {
+              "e": 37,
+              "p": 0
+            },
+            "majority_class": "e",
+            "entropy": 0.0,
+            "is_leaf": true,
+            "feature": null,
+            "information_gain": null,
+            "stop_reason": "pure",
+            "branch_value": "o",
+            "candidate_gains": {},
+            "children": {}
+          },
+          "r": {
+            "node_id": 12,
+            "depth": 2,
+            "n_samples": 61,
+            "class_counts": {
+              "e": 0,
+              "p": 61
+            },
+            "majority_class": "p",
+            "entropy": 0.0,
+            "is_leaf": true,
+            "feature": null,
+            "information_gain": null,
+            "stop_reason": "pure",
+            "branch_value": "r",
+            "candidate_gains": {},
+            "children": {}
+          },
+          "w": {
+            "node_id": 13,
+            "depth": 2,
+            "n_samples": 500,
+            "class_counts": {
+              "e": 464,
+              "p": 36
+            },
+            "majority_class": "e",
+            "entropy": 0.3733433210798535,
+            "is_leaf": false,
+            "feature": "habitat",
+            "information_gain": 0.2629499489783064,
+            "stop_reason": null,
+            "branch_value": "w",
+            "candidate_gains": {
+              "cap-shape": 0.03965004948493683,
+              "cap-surface": 0.08382921018708761,
+              "cap-color": 0.20549267885432534,
+              "bruises": 0.015400113247998837,
+              "gill-attachment": 0.0,
+              "gill-spacing": 0.017997698487050073,
+              "gill-size": 0.22542131409232796,
+              "gill-color": 0.08595678348790736,
+              "stalk-shape": 0.0,
+              "stalk-root": 0.03893991367594957,
+              "stalk-surface-above-ring": 0.07530118064927882,
+              "stalk-surface-below-ring": 0.22557017524171447,
+              "stalk-color-above-ring": 0.05777035217079701,
+              "stalk-color-below-ring": 0.2104680587565329,
+              "veil-color": 0.03893798798492448,
+              "ring-number": 0.22542131409232796,
+              "ring-type": 0.040585874216491846,
+              "population": 0.12088141433073779,
+              "habitat": 0.2629499489783064
+            },
+            "children": {
+              "d": {
+                "node_id": 14,
+                "depth": 3,
+                "n_samples": 31,
+                "class_counts": {
+                  "e": 5,
+                  "p": 26
+                },
+                "majority_class": "p",
+                "entropy": 0.6373874992221911,
+                "is_leaf": false,
+                "feature": "gill-size",
+                "information_gain": 0.6373874992221911,
+                "stop_reason": null,
+                "branch_value": "d",
+                "candidate_gains": {
+                  "cap-shape": 0.013872481901452405,
+                  "cap-surface": 0.3632699960514304,
+                  "cap-color": 0.14244255678055828,
+                  "bruises": 0.0,
+                  "gill-attachment": 0.0,
+                  "gill-spacing": 0.0,
+                  "gill-size": 0.6373874992221911,
+                  "gill-color": 0.0,
+                  "stalk-shape": 0.0,
+                  "stalk-root": 0.6373874992221911,
+                  "stalk-surface-above-ring": 0.6373874992221911,
+                  "stalk-surface-below-ring": 0.0,
+                  "stalk-color-above-ring": 0.6373874992221911,
+                  "stalk-color-below-ring": 0.15810756960396266,
+                  "veil-color": 0.0,
+                  "ring-number": 0.6373874992221911,
+                  "ring-type": 0.6373874992221911,
+                  "population": 0.6373874992221911
+                },
+                "children": {
+                  "b": {
+                    "node_id": 15,
+                    "depth": 4,
+                    "n_samples": 5,
+                    "class_counts": {
+                      "e": 5,
+                      "p": 0
+                    },
+                    "majority_class": "e",
+                    "entropy": 0.0,
+                    "is_leaf": true,
+                    "feature": null,
+                    "information_gain": null,
+                    "stop_reason": "pure",
+                    "branch_value": "b",
+                    "candidate_gains": {},
+                    "children": {}
+                  },
+                  "n": {
+                    "node_id": 16,
+                    "depth": 4,
+                    "n_samples": 26,
+                    "class_counts": {
+                      "e": 0,
+                      "p": 26
+                    },
+                    "majority_class": "p",
+                    "entropy": 0.0,
+                    "is_leaf": true,
+                    "feature": null,
+                    "information_gain": null,
+                    "stop_reason": "pure",
+                    "branch_value": "n",
+                    "candidate_gains": {},
+                    "children": {}
+                  }
+                }
+              },
+              "g": {
+                "node_id": 17,
+                "depth": 3,
+                "n_samples": 231,
+                "class_counts": {
+                  "e": 231,
+                  "p": 0
+                },
+                "majority_class": "e",
+                "entropy": 0.0,
+                "is_leaf": true,
+                "feature": null,
+                "information_gain": null,
+                "stop_reason": "pure",
+                "branch_value": "g",
+                "candidate_gains": {},
+                "children": {}
+              },
+              "l": {
+                "node_id": 18,
+                "depth": 3,
+                "n_samples": 48,
+                "class_counts": {
+                  "e": 38,
+                  "p": 10
+                },
+                "majority_class": "e",
+                "entropy": 0.7382848661434506,
+                "is_leaf": false,
+                "feature": "cap-color",
+                "information_gain": 0.7382848661434506,
+                "stop_reason": null,
+                "branch_value": "l",
+                "candidate_gains": {
+                  "cap-shape": 0.40672053800822644,
+                  "cap-surface": 0.31348402166619915,
+                  "cap-color": 0.7382848661434506,
+                  "bruises": 0.27373281474975997,
+                  "gill-attachment": 0.0,
+                  "gill-spacing": 0.0,
+                  "gill-size": 0.0,
+                  "gill-color": 0.153687795943953,
+                  "stalk-shape": 0.0,
+                  "stalk-root": 0.27373281474975997,
+                  "stalk-surface-above-ring": 0.3763341476244326,
+                  "stalk-surface-below-ring": 0.3763341476244326,
+                  "stalk-color-above-ring": 0.27373281474975997,
+                  "stalk-color-below-ring": 0.7382848661434506,
+                  "veil-color": 0.27373281474975997,
+                  "ring-number": 0.0,
+                  "ring-type": 0.27373281474975997,
+                  "population": 0.7382848661434506
+                },
+                "children": {
+                  "c": {
+                    "node_id": 19,
+                    "depth": 4,
+                    "n_samples": 19,
+                    "class_counts": {
+                      "e": 19,
+                      "p": 0
+                    },
+                    "majority_class": "e",
+                    "entropy": 0.0,
+                    "is_leaf": true,
+                    "feature": null,
+                    "information_gain": null,
+                    "stop_reason": "pure",
+                    "branch_value": "c",
+                    "candidate_gains": {},
+                    "children": {}
+                  },
+                  "n": {
+                    "node_id": 20,
+                    "depth": 4,
+                    "n_samples": 19,
+                    "class_counts": {
+                      "e": 19,
+                      "p": 0
+                    },
+                    "majority_class": "e",
+                    "entropy": 0.0,
+                    "is_leaf": true,
+                    "feature": null,
+                    "information_gain": null,
+                    "stop_reason": "pure",
+                    "branch_value": "n",
+                    "candidate_gains": {},
+                    "children": {}
+                  },
+                  "w": {
+                    "node_id": 21,
+                    "depth": 4,
+                    "n_samples": 5,
+                    "class_counts": {
+                      "e": 0,
+                      "p": 5
+                    },
+                    "majority_class": "p",
+                    "entropy": 0.0,
+                    "is_leaf": true,
+                    "feature": null,
+                    "information_gain": null,
+                    "stop_reason": "pure",
+                    "branch_value": "w",
+                    "candidate_gains": {},
+                    "children": {}
+                  },
+                  "y": {
+                    "node_id": 22,
+                    "depth": 4,
+                    "n_samples": 5,
+                    "class_counts": {
+                      "e": 0,
+                      "p": 5
+                    },
+                    "majority_class": "p",
+                    "entropy": 0.0,
+                    "is_leaf": true,
+                    "feature": null,
+                    "information_gain": null,
+                    "stop_reason": "pure",
+                    "branch_value": "y",
+                    "candidate_gains": {},
+                    "children": {}
+                  }
+                }
+              },
+              "p": {
+                "node_id": 23,
+                "depth": 3,
+                "n_samples": 33,
+                "class_counts": {
+                  "e": 33,
+                  "p": 0
+                },
+                "majority_class": "e",
+                "entropy": 0.0,
+                "is_leaf": true,
+                "feature": null,
+                "information_gain": null,
+                "stop_reason": "pure",
+                "branch_value": "p",
+                "candidate_gains": {},
+                "children": {}
+              },
+              "w": {
+                "node_id": 24,
+                "depth": 3,
+                "n_samples": 157,
+                "class_counts": {
+                  "e": 157,
+                  "p": 0
+                },
+                "majority_class": "e",
+                "entropy": 0.0,
+                "is_leaf": true,
+                "feature": null,
+                "information_gain": null,
+                "stop_reason": "pure",
+                "branch_value": "w",
+                "candidate_gains": {},
+                "children": {}
+              }
+            }
+          },
+          "y": {
+            "node_id": 25,
+            "depth": 2,
+            "n_samples": 38,
+            "class_counts": {
+              "e": 38,
+              "p": 0
+            },
+            "majority_class": "e",
+            "entropy": 0.0,
+            "is_leaf": true,
+            "feature": null,
+            "information_gain": null,
+            "stop_reason": "pure",
+            "branch_value": "y",
+            "candidate_gains": {},
+            "children": {}
+          }
+        }
+      },
+      "p": {
+        "node_id": 26,
+        "depth": 1,
+        "n_samples": 194,
+        "class_counts": {
+          "e": 0,
+          "p": 194
+        },
+        "majority_class": "p",
+        "entropy": 0.0,
+        "is_leaf": true,
+        "feature": null,
+        "information_gain": null,
+        "stop_reason": "pure",
+        "branch_value": "p",
+        "candidate_gains": {},
+        "children": {}
+      },
+      "s": {
+        "node_id": 27,
+        "depth": 1,
+        "n_samples": 450,
+        "class_counts": {
+          "e": 0,
+          "p": 450
+        },
+        "majority_class": "p",
+        "entropy": 0.0,
+        "is_leaf": true,
+        "feature": null,
+        "information_gain": null,
+        "stop_reason": "pure",
+        "branch_value": "s",
+        "candidate_gains": {},
+        "children": {}
+      },
+      "y": {
+        "node_id": 28,
+        "depth": 1,
+        "n_samples": 457,
+        "class_counts": {
+          "e": 0,
+          "p": 457
+        },
+        "majority_class": "p",
+        "entropy": 0.0,
+        "is_leaf": true,
+        "feature": null,
+        "information_gain": null,
+        "stop_reason": "pure",
+        "branch_value": "y",
+        "candidate_gains": {},
+        "children": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+# Środowiska i cache
+.venv/
+.venv
+.venv.nosync/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+
+# Materiały prywatne prowadzącego warsztat — nigdy do repozytorium dostępnego dla grupy
+group_exercise/instructor_private/
+
+# Archiwa generowane przez scripts/package_submission.py
+submission/*.zip
+
+# Pliki tymczasowe
+*.part
+*.tmp
+*.log
